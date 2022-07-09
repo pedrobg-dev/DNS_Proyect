@@ -1,0 +1,55 @@
+$TTL    300
+@       IN      SOA     planbecarios15.cf.      hosmaster.planbecarios15.cf (
+                        15      ; Serial
+                        300     ; Refresh
+                        300     ; Retry
+                        2419200 ; Expire
+                        604800 ); Negative Cache TTL
+;
+; name-servers - NS records
+@        IN      NS      ns.planbecarios15.cf.
+planbecarios15.cf.        IN      NS      ns2.he.net.
+planbecarios15.cf.        IN      NS      ns3.he.net.
+planbecarios15.cf.        IN      NS      ns4.he.net.
+planbecarios15.cf.        IN      NS      ns5.he.net.
+
+; name-servers - A records
+ns.planbecarios15.cf.   IN      A       3.21.51.197
+
+directory.planbecarios15.cf.    IN      A       3.14.238.180
+dns.planbecarios15.cf.  300     IN      CNAME   ns.planbecarios15.cf.
+imap.planbecarios15.cf. 300     IN      CNAME   mail.planbecarios15.cf.
+ldap.planbecarios15.cf. 300     IN      CNAME   directory.planbecarios15.cf.
+mail.planbecarios15.cf. 300     IN      A       3.20.143.7
+mariadb.planbecarios15.cf.      300     IN      CNAME web.planbecarios15.cf.
+mysql.planbecarios15.cf.        300     IN      CNAME web.planbecarios15.cf.
+nagios.planbecarios15.cf.       300     IN      CNAME nagios.becarios.tonejito.info.
+nfs.planbecarios15.cf.  300     IN      CNAME   storage.planbecarios15.cf.
+planbecarios15.cf.      300     IN      A       18.117.38.39
+postgresql.planbecarios15.cf.   300     IN      CNAME   web.planbecarios15.cf.
+smtp.planbecarios15.cf. 300     IN      CNAME   mail.planbecarios15.cf.
+storage.planbecarios15.cf.      300     IN      A       13.58.149.147
+vpn.planbecarios15.cf.  300     IN      A       18.189.117.97
+web.planbecarios15.cf.  300     IN      A       18.117.38.39
+www.planbecarios15.cf.  300     IN      CNAME   web.planbecarios15.cf.
+_acme-challenge.planbecarios15.cf.      300     IN      TXT     "6jzEWR6alFR0guBRzCp9rRvKIs9t8FoatzBHqIcniZs"
+wordpress.planbecarios15.cf.    IN      CNAME   web.planbecarios15.cf.  
+redmine.planbecarios15.cf.      300     IN      CNAME   web.planbecarios15.cf.
+webmail.planbecarios15.cf.      300     IN      CNAME   web.planbecarios15.cf.
+planbecarios15.cf.      300     IN      MX      0 mail.planbecarios15.cf.
+planbecarios15.cf.      300     IN      TXT     "v=spf1 mx a ~all"
+_ldap._tcp.directory.planbecarios15.cf. 300 IN SRV 10 60 389 directory.planbecarios15.cf.
+vpn.priv.planbecarios15.cf.     300     IN      A       10.0.8.1
+nagios.priv.planbecarios15.cf.  300     IN      A       10.0.8.3
+dns.priv.planbecarios15.cf.     300     IN      A       10.0.8.6
+mail.priv.planbecarios15.cf.    300     IN      A       10.0.8.9
+storage.priv.planbecarios15.cf. 300     IN      A       10.0.8.10
+directory.priv.planbecarios15.cf.       300     IN      A       10.0.8.11
+web.priv.planbecarios15.cf.     300     IN      A       10.0.8.14
+;       priv    CNAME
+dns-priv.planbecarios15.cf.      300     IN      CNAME   dns.priv.planbecarios15.cf.
+web-priv.planbecarios15.cf.      300     IN      CNAME   web.priv.planbecarios15.cf.
+mail-priv.planbecarios15.cf.     300     IN      CNAME   mail.priv.planbecarios15.cf.
+vpn-priv.planbecarios15.cf.      300     IN      CNAME   vpn.priv.planbecarios15.cf.
+directory-priv.planbecarios15.cf.        300     IN      CNAME   directory.priv.planbecarios15.cf.
+storage-priv.planbecarios15.cf.  300     IN      CNAME   storage.priv.planbecarios15.cf.

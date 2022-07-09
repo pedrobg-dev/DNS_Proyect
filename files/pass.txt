@@ -1,0 +1,6 @@
+pedro:contra_p:5000:100:Pedro Bautista:/home/pedro:/bin/bash
+erick:contra_e:5001:100:Erick Gonzalez:/home/erick:/bin/bash
+ari:contra_a:5002:100:Ariadna Lazaro:/home/ariadna:/bin/bash
+paola:contra_p:5003:100:Paola Meneses:/home/paola:/bin/bash
+oscar:contra_o:5004:100:Oscar Castillo:/home/oscar:/bin/bash
+

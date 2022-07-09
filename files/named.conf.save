@@ -1,0 +1,44 @@
+//
+// named.conf
+//
+// Provided by Red Hat bind package to configure the ISC BIND named(8) DNS
+// server as a caching only nameserver (as a localhost DNS resolver only).
+//
+// See /usr/share/doc/bind*/sample/ for example named configuration files.
+//
+// See the BIND Administrator's Reference Manual (ARM) for details about the
+// configuration located in /usr/share/doc/bind-{version}/Bv9ARM.html
+
+acl "trusted"{
+        127.0.0.1;      //localhost
+        3.21.51.197;    //dns
+        3.20.143.7;     //mail
+        18.117.38.39;   //web
+        13.58.149.147;  //storage
+        3.14.238.180;   //directory
+        18.189.117.97;  //vpn
+        104.156.225.38; //nagios
+        216.218.133.2;  //HE slave
+};
+//
+// named.conf
+//
+// Provided by Red Hat bind package to configure the ISC BIND named(8) DNS
+// server as a caching only nameserver (as a localhost DNS resolver only).
+//
+// See /usr/share/doc/bind*/sample/ for example named configuration files.
+//
+// See the BIND Administrator's Reference Manual (ARM) for details about the
+// configuration located in /usr/share/doc/bind-{version}/Bv9ARM.html
+
+acl "trusted"{
+        127.0.0.1;      //localhost
+        3.21.51.197;    //dns
+        3.20.143.7;     //mail
+        18.117.38.39;   //web
+        13.58.149.147;  //storage
+        3.14.238.180;   //directory
+        18.189.117.97;  //vpn
+        104.156.225.38; //nagios
+        216.218.133.2;  //HE slave
+};

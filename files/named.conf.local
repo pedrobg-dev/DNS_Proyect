@@ -1,0 +1,9 @@
+zone "planbecarios15.cf"{
+        type master;
+        allow-transfer
+        { 216.218.133.2; 104.156.225.38; 10.0.8.3; };
+        notify explicit;
+        also-notify
+        { 216.218.130.2; };
+        file "/etc/named/zones/db.planbecarios15.cf";
+};
